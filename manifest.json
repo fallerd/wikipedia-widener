@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Wikipedia widener",
+  "version": "1.0",
+  "description": "Ensure wikipedia starts in wide mode if expansion toggle button appears",
+
+  "icons": {
+    "16": "img/16.png",
+    "32": "img/32.png",
+    "48": "img/48.png",
+    "128": "img/128.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "background.js"
+      ],
+      "matches": [
+        "https://en.wikipedia.org/*"
+      ]
+    }
+  ]
+}
